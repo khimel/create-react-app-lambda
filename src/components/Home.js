@@ -34,7 +34,7 @@ class Home extends Component {
           <div className="row d-flex align-self-center mt-4">
             <div className="col d-flex justify-content-center ">
               <div>
-                <input type="text" className="form-control" id="playerNameInput" placeholder="Player Name" onChange={ this.handleChange } />
+                <input type="text" className="form-control" id="playerNameInput" placeholder="Player Name" onChange={ this.handleChange } required />
               </div>
             </div> 
           </div>
