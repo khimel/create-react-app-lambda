@@ -13,19 +13,13 @@ const Win = ({ name }) => {
       <div className="row d-flex align-self-center mt-4">
         <div className="col d-flex justify-content-center ">
           <div>
-          <iframe
-        src="https://www.youtube.com/embed/E7wJTI-1dvQ"
-        frameborder="0"
-        allow="autoplay; encrypted-media"
-        allowfullscreen
-        title="video"
-      />
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/mqqft2x_Aa4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullscreen></iframe>
           </div>
         </div> 
       </div>
       <div className="row d-flex align-self-center my-auto mt-3">
         <div className="col d-flex justify-content-center ">
-            <h2 className="white">Try watching the new Batman movie, it's worth it!</h2>
+            
         </div> 
       </div>
     </div>
