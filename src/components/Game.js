@@ -61,7 +61,7 @@ class Game extends Component {
   checkAnswer(e){
     console.log(e.target.value);
     console.log(this.state.CorrectIndex);
-    var val1 = e.target.value;
+    var val1 = parseInt(e.target.value);
     var val2 = this.state.CorrectIndex;
     if(val1 === val2){
 
@@ -74,7 +74,8 @@ class Game extends Component {
 
         currentLevel : this.state.currentLevel + 1,
         Answers : answers,
-        key: 1-this.state.key
+        key: 1-this.state.key,
+        CorrectIndex: correctIndex
 
       })
 
@@ -108,7 +109,9 @@ class Game extends Component {
   }
 
   getRandomInt() {
-  return Math.floor(Math.random() * 4) ; // number from 0 to 3
+    var x = Math.floor(Math.random() * 4);
+    console.log(x);
+  return x ; // number from 0 to 3
 }
 
     render() {
