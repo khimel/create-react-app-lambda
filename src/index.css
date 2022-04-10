@@ -7,4 +7,5 @@ html, body {
     margin: 0px;
     background: url("./assets/rataalada-back.webp") no-repeat center fixed ;
     background-size: cover;
+    font-family: 'Chakra Petch', sans-serif;
 }
