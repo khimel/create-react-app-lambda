@@ -6,10 +6,8 @@ import Game from "./components/Game"
 import "./App.css"
 
 import {
-  BrowserRouter as Router,
   Routes,
   Route,
-  Link,
   BrowserRouter
 } from "react-router-dom";
 

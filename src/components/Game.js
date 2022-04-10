@@ -61,7 +61,9 @@ class Game extends Component {
   checkAnswer(e){
     console.log(e.target.value);
     console.log(this.state.CorrectIndex);
-    if(e.target.value == this.state.CorrectIndex){
+    var val1 = e.target.value;
+    var val2 = this.state.CorrectIndex;
+    if(val1 === val2){
 
       var answers = this.state.Questions[this.state.currentLevel +1].incorrect_answers;
       var correctIndex = (this.getRandomInt());
@@ -110,7 +112,7 @@ class Game extends Component {
 }
 
     render() {
-      const { DataisLoaded ,Questions } = this.state;
+      const { DataisLoaded } = this.state;
       if(!DataisLoaded){
         return(
           <h1 className="white">Starting...</h1>
